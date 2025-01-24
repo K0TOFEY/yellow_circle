@@ -24,6 +24,6 @@ if __name__ == '__main__':
                 r = 0
         if fl:
             pygame.draw.circle(screen, (255, 255, 0), (x, y), int(r), 0)
-            r += pixels_sec * clock.tick()/100
+            r += pixels_sec * clock.tick()/1000
         pygame.display.flip()
     pygame.quit()
